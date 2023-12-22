@@ -10,6 +10,12 @@ const priceBus= 0.21
 console.log("N° di chilometri da percorrere:", kilometresDone);
 console.log("Età del passeggero:", agePerson);
 
-//PART THE CONDITIONAL
+//PART ABOUT THE CONDITIONAL
 
-if(agePerson < ) 
+if (agePerson < 18) {
+    document.writeln(`Il prezzo del biglietto è di: <strong>${0.21*kilometresDone-(20/100)}€</strong>`) 
+} else if ( agePerson > 18) {
+    document.writeln(`Il prezzo del biglietto è di: <strong>${0.21*kilometresDone}€</strong>`)       
+} else if (agePerson > 65) {
+    document.writeln(`Il prezzo del biglietto è di: <strong>${0.21*kilometresDone*40/100}€</strong>`)
+}
