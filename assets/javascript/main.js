@@ -13,9 +13,17 @@ console.log("Età del passeggero:", agePerson);
 //PART ABOUT THE CONDITIONAL
 
 if (agePerson < 18) {
-    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone-(20/100)}€</strong></p>`); 
+    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone*20/100}€</strong></p>`); 
+
+} else if (agePerson==18) {
+    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone}€</strong></p>`);
+
 } else if ( agePerson > 18 && agePerson < 65) {
-    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone}€</strong></p>`);       
+    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone}€</strong></p>`);
+
+} else if (agePerson==65) {
+    document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone}€</strong></p>`);
+
 } else if (agePerson > 65) {
     document.writeln(`<p> Il prezzo del biglietto è di: <strong>${0.21*kilometresDone*40/100}€</strong></p>`);
 }
